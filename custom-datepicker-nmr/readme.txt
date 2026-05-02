@@ -3,23 +3,37 @@ Contributors: mirceatm
 Donate link: https://paypal.me/mirceatm
 Tags: cf7, contact, form, contact form, date filed, datetime, format date, contact form 7, custom date, datepicker, jquery ui
 Requires at least: 4.9
-Tested up to: 6.4.2
-Stable tag: 1.0.8
+Tested up to: 6.9.4
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Use date format like dd.mm.yy in date fields (jquery ui datepicker) for Contact Form 7. 
+Use date format like dd.mm.yy in date fields (jquery ui datepicker) for Contact Form 7.
 
 == Description ==
 
 Contact Form 7 offers users standard HTML5 controls to input data, like text input and [input type="date"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date).
 The browser will [not format the date text in a date format you might choose](https://stackoverflow.com/questions/7372038/is-there-any-way-to-change-input-type-date-format)
 This plugin allows Contact Form 7 to use [jQuery UI Datepicker](https://jqueryui.com/datepicker/) where date format can be set or changed.
-This plugin requires jquery , jquery ui and contact form 7.
+This plugin requires jquery, jquery ui and contact form 7.
 Use `format`, `min` or `max` to configure it.
-`
-[datepicker* myFirstDatepicker id:myFirstDatepicker format:dd.mm.yy min:2022-06-06 max:2022-08-08] 
-`
+
+`[datepicker* myFirstDatepicker id:myFirstDatepicker format:dd.mm.yy min:2022-06-06 max:2022-08-08]`
+
+= Want more? =
+
+**[Custom Datepicker Plus NMR](https://namir.ro/downloads/custom-datepicker-plus-nmr/)** adds:
+
+* Exclude specific dates, date ranges, or entire weekdays — `nmrexclude`, `nmrexcludeweekdays`
+* Pull blocked dates dynamically from a Custom Post Type — `nmrexcludecpt`
+* Relative min/max — `min:+1 max:+30`, `min:today`
+* Multi-date selection with optional cap — `multiselect maxselect:3`
+* Linked start/end date range fields — `nmrrangepair`
+* Timepicker tag — `[timepickerplus]` with min/max/step
+* Auto-select first available date — `firstopen`
+* Conditional show/hide of other CF7 fields — `nmrshowfield` / `nmrhidefield`
+* Custom validation error messages per field
+* Global settings page (date format, year range, first day of week)
 
 = Docs & Support =
 
@@ -40,7 +54,7 @@ With the default configuration, this plugin, in itself, does not:
 
 == Installation ==
 
-1. Upload the entire  folder to the `/wp-content/plugins/` directory.
+1. Upload the entire folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 
 Basic usage:
@@ -54,6 +68,12 @@ or
 1. screenshot-1.jpg
 
 == Changelog ==
+
+= 1.0.9 =
+
+* Added: Settings / upgrade page (Settings → Datepicker NMR) showing Plus features
+* Added: Dismissible admin notice introducing Custom Datepicker Plus NMR
+* Added: "Upgrade to Plus" and "Settings" links on the Plugins page
 
 = 1.0.8 =
 
